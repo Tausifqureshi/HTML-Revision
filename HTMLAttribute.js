@@ -32,7 +32,7 @@
 
 
 // ============================================== Src Attribute ================================================ //
-// ChatGPT Se liya hua Syntax ---> 5. src Attribute
+// ChatGPT Se liya hua Syntax ---> 5. src Attribute "source".
 // src attribute kisi image, video, audio, ya script file ka path specify karta hai. Yeh mostly <img>, <script>, <audio>, aur <video> tags ke saath use hota hai.
 {/* <img src="image.jpg" alt="Sundar drishya"> */}
 
