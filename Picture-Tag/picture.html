@@ -7,6 +7,15 @@
 </head>
 <body>
     
-    
+    <picture>
+        <!-- jab screen ki width 600 hogi tab ye image show hogi -->
+        <source srcset="/bottom-img/image-small.jpg" media="(max-width: 600px)">
+
+        <!-- jab screen ki width 1200 hogi tab ye image show hogi -->
+        <source srcset="/bottom-img/image-medium.jpg" media="(max-width: 1200px)">
+
+        <!-- large screen ke liye ye image rege gi  -->
+        <img src="/bottom-img/image-large.jpg" alt="Image ka description">
+      </picture>
 </body>
 </html>
