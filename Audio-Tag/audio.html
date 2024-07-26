@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Audio-Tag</title>
+</head>
+<body>
+    <!-- Multiple Source Files -->
+    <audio controls>
+        <source src="audio-file.ogg" type="audio/ogg">
+        <source src="audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      
+      <!-- JavaScript handler -->
+     <!-- Aap JavaScript ka use karke audio controls ko dynamically manipulate kar sakte hain. Example: -->
+      <audio id="myAudio" controls>
+        <source src="example.mp3" type="audio/mpeg">
+      </audio>
+      
+      <script>
+        var audio = document.getElementById('myAudio');
+        audio.play(); // Audio ko play karta hai
+        audio.pause(); // Audio ko pause karta hai
+        audio.volume = 0.5; // Volume set karta hai (0 se 1 ke beech)
+      </script>
+      
+      
+</body>
+</html>
