@@ -1,8 +1,6 @@
 // =================================================== Table ===================================================== //
 // ChatGPT Se liya hua Syntax ---> HTML tables ko tabular format me data dikhane ke liye use kiya jata hai. Yahan HTML table ke main tags ke details hain.
 
-
-
 // ========================================= Table Ka Basic Structure ============================================ //
 // ChatGPT Se liya hua Syntax ---> HTML Table Ka Basic Structure.
 // 1. <table>: Ye poore table ka container element hai.
@@ -21,9 +19,6 @@
 
 // 8.  <tfoot>: Table ke footer content ko group karta hai. Ye summary ya footer rows ke liye use hota hai.
 
-
-
-
 // ================================================ Table Style ================================================== //
 // ChatGPT Se liya hua Syntax ---> Tables Ko Style Karna
 // CSS ka use karke tables ko style kiya ja sakta hai:
@@ -31,4 +26,4 @@
 // 1. Borders: border property se cells ke around borders add kar sakte hain.
 // 2. Padding: padding property se cells ke andar space add kar sakte hain.
 // 3. Background Color: background-color property se header cells ya rows ka background color change kar sakte hain.
-// 4. Text Alignment: text-align property se cells ke andar 
+// 4. Text Alignment: text-align property se cells ke andar
