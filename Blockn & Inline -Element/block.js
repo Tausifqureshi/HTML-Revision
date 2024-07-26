@@ -1,4 +1,4 @@
-// ================================================ Title Tag ==================================================== //
+// =============================================== Block Element ================================================= //
 // ChatGPT Se liya hua Syntax --->  HTML elements ko do main categories me divide kiya jata hai: block-level elements aur inline elements. Inko samajhna web pages design karte waqt bahut zaroori hota hai. Aaiye, in dono categories ko detail me samjhte hain:
 
 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+  
+<form name="userForm" action="/submit" method="post">
+</form>
+
+<!-- Form ke ye shre element bhi hai -->
+<!-- input element fields -->
+<form action="/submit" method="post">
+    <input type="text" name="username" placeholder="Enter your username">
+    <input type="password" name="password" placeholder="Enter your password">
+    <input type="submit" value="Submit">
+</form>
+
+  <!-- <textarea> element multi-line text input ke liye hota hai: -->
+    <form action="/submit" method="post">
+        <textarea name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+
+
+      <!-- <select> element drop-down list ke liye use hota hai: -->
+        <form action="/submit" method="post">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="car">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+
+
+          <!-- Radio buttons users ko ek set se ek option select karne ki suvidha dete hain: -->
+          <form action="/submit" method="post">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <input type="submit" value="Submit">
+          </form>
+          
+
+          <!-- Checkboxes multiple options select karne ke liye use hoti hain:html-->
+          <form action="/submit" method="post">
+            <label><input type="checkbox" name="subscribe" value="newsletter"> Subscribe to newsletter</label>
+            <input type="submit" value="Submit">
+          </form>
+          
+
+          <!-- Buttons form ko submit karne ya JavaScript functions trigger karne ke liye use hoti hain: -->
+         <!-- reset-BUTTON Ek button create karta hai jo form fields ko unke default values pe reset karta hai. -->
+          <form action="/submit" method="post">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="alert('Clicked!')">Click Me</button>
+            <input type="reset" value="Reset">
+          </form>
+
+
+
+          <!-- Advanced Form Controls -->
+          <!-- <fieldset>: Related elements aur labels ko form mein group karta hai. -->
+          <!-- <legend>: <fieldset> ke liye caption provide karta hai. -->
+         <!-- <datalist>: <input> element ke liye predefined options provide karta hai. -->
+            <form action="/submit" method="post">
+                <fieldset>
+                  <legend>Personal Information</legend>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name">
+                  
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" name="age">
+                </fieldset>
+              
+                <label for="country">Country:</label>
+                <input list="countries" id="country" name="country">
+                <datalist id="countries">
+                  <option value="USA">
+                  <option value="Canada">
+                  <option value="Mexico">
+                </datalist>
+              
+                <input type="submit" value="Submit">
+            </form>
+              
+</body>
+</html>

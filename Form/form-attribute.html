@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attribute</title>
+</head>
+<body>
+    
+    <!-- 1. action Attribute -->
+    <form action="submit_form.php">       
+    </form>
+      
+    <!-- 2. mathod Attribute -->
+    <form action="submit_form.php" method="post">
+    </form>
+      
+    <!-- 3. enctype Attribute -->
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">   
+    </form>
+      
+    <!-- 4. target Attribute -->
+    <form action="submit_form.php" target="_blank">
+    </form>
+      
+    <!-- 5. novalidate Attribute -->
+    <form action="submit_form.php" novalidate>
+    </form>
+      
+    <!-- 6. autocomplete Attribute -->
+    <form action="submit_form.php" autocomplete="off">
+    </form>
+      
+    <!-- 7. accept-charset Attribute -->
+    <form action="submit_form.php" accept-charset="UTF-8">
+    </form>
+      
+
+     <!-- 8. name Attribute -->
+     <form name="userForm" action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="userName">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="userEmail">
+        
+        <input type="submit" value="Submit">
+    </form>
+       
+    <!-- Name Attribute handler JavaScript -->
+    <script>
+        // name attribute ke liye ye
+        var form = document.forms['userForm'];
+
+        // var nameField = form.elements['userName'];
+        // var emailField = form.elements['userEmail'];
+        var nameField = document.getElementsByName('userName')[0]
+        var emailField = document.getElementsByName('userEmail')[0];
+
+        console.log('Name:', nameField.value);
+        console.log('Email:', emailField.value);
+
+        form.addEventListener('submit', function(event) {
+            console.log('Submitting form with Name:', nameField.value);
+            console.log('Submitting form with Email:', emailField.value);
+            
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
