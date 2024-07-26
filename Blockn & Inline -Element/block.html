@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Element Styling</title>
+    <style>
+        .block-element {
+            background-color: lightblue;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%; /* Takes up 80% of its container's width */
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block-element">
+            This is a block element. It occupies the full width of its parent and has margins.
+        </div>
+        <p class="block-element">
+            This is a paragraph, which is also a block element. Notice how it starts on a new line.
+        </p>
+    </div>
+</body>
+</html>
