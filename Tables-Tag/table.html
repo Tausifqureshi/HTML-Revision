@@ -3,9 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML-Table-Tag</title>
+    <title>Beautiful Styled HTML Table</title>
+    <style>
+        /* Basic table styling */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto; /* Center the table */
+            font-size: 18px;
+            text-align: left;
+            background-color: #f8f9fa; /* Full table background color */
+            border-radius: 8px; /* Rounded corners */
+            overflow: hidden; /* Ensures rounded corners on all sides */
+        }
+        
+        th, td {
+            padding: 15px 20px;
+            border: 1px solid #dddddd;
+        }
+        
+        th {
+            background-color: #007bff; /* Header background color */
+            color: white; /* Header text color */
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternating row color */
+        }
+
+        tr:hover {
+            background-color: #e9ecef; /* Hover effect for rows */
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive table */
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            
+            thead tr {
+                display: none;
+            }
+            
+            tr {
+                margin-bottom: 10px;
+            }
+            
+            td {
+                padding-left: 50%;
+                text-align: right;
+                position: relative;
+            }
+            
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: calc(50% - 20px);
+                padding-right: 10px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+
+<h2 style="text-align: center;">Beautiful Styled HTML Table</h2>
+
+<table>
+    <caption>Employee Information</caption>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="First Name">John</td>
+            <td data-label="Last Name">Doe</td>
+            <td data-label="Age">30</td>
+            <td data-label="Department">Marketing</td>
+        </tr>
+        <tr>
+            <td data-label="First Name">Jane</td>
+            <td data-label="Last Name">Smith</td>
+            <td data-label="Age">25</td>
+            <td data-label="Department">Sales</td>
+        </tr>
+        <tr>
+            <td data-label="First Name">Emily</td>
+            <td data-label="Last Name">Johnson</td>
+            <td data-label="Age">35</td>
+            <td data-label="Department">Development</td>
+        </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
