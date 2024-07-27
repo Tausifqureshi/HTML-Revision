@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="500" height="400" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        // Canvas element ko access karna
+        var canvas = document.getElementById('myCanvas');
+        // 2D context prapt karna
+        var ctx = canvas.getContext('2d');
+
+        // Canvas par ek rectangle draw karna
+        ctx.fillStyle = "#FF0000"; // Fill color set karna
+        ctx.fillRect(100, 100, 200, 100); // (x, y, width, height)
+
+
+
+        // =========== Canvas Par Shapes Draw Karna =============== //
+        // var canvas = document.getElementById('myCanvas');
+        // // 2D context prapt karna
+        // var ctx = canvas.getContext('2d');
+
+        // // Circle draw karna
+        // ctx.beginPath(); // Ek nayi path shuru karna
+        // ctx.arc(250, 200, 50, 0, 2 * Math.PI); // (x, y, radius, startAngle, endAngle)
+        // ctx.fillStyle = "blue"; // Fill color set karna
+        // ctx.fill(); // Circle fill karna
+        // ctx.stroke(); // Circle ki outline draw karna.
+        
+    </script>
+</body>
+
+</html>
