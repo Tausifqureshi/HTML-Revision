@@ -7,7 +7,7 @@
 
 // name attribute input element ka naam specify karta hai, jo form submit karte waqt server ko bheja jata hai. Yeh form data ko identify karne ke liye important hota hai.
 
-
+ 
 // ============================================= Value Attribute ================================================ //
 // ChatGPT Se liya hua Syntax ---> 2. Value Attribute (value)
 

@@ -49,7 +49,7 @@
 // ============================================== name Attribute ================================================= //
 // ChatGPT Se liya hua Syntax ---> 8. name attribute
 // 1. Purpose of name Attribute:
-// name attribute ka upyog form ki pahchan banane ke liye kiya jata hai. Ye visheshkar tab upyogi hota hai jab JavaScript ya server-side scripting languages me form ko refer karna ho.
+// name attribute ka upyog form ki pahchan banane ke liye kiya jata hai. Ye visheshkar tab upyogi hota hai jab JavaScript ya server-side scripting languages me form ko refer karna ho. 
 
 // 2. Form Identification:
 // Jab aapke paas ek page par ek se adhik forms hote hain, to name attribute ka upyog karke aap vishesh form ko pahchan sakte hain. Udaaharan ke liye, agar aapke paas login aur registration ke liye alag-alag forms hain, to aap unke name attributes ko alag-alag karke unhein pahchan sakte hain.
